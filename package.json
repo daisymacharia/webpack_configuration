@@ -1,0 +1,31 @@
+{
+	"name": "webpack-4-config",
+	"version": "1.0.0",
+	"description": "configuration of webpack 4",
+	"main": "index.js",
+	"scripts": {
+		"start": "webpack --mode development -w && babel ./src/index.js -o ./src/transpile.js && node ./src/transpile.js",
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"watch": "webpack -w"
+	},
+	"keywords": [
+		"webpack4",
+		"nodejs"
+	],
+	"author": "Daisy Macharia",
+	"license": "ISC",
+	"devDependencies": {
+		"babel-cli": "^6.26.0",
+		"babel-core": "^6.26.3",
+		"babel-loader": "^7.1.5",
+		"babel-preset-env": "^1.7.0",
+		"webpack": "^4.16.1",
+		"webpack-cli": "^3.0.8",
+		"webpack-dev-server": "^3.1.4",
+		"webpack-node-externals": "^1.7.2"
+	},
+	"dependencies": {
+		"body-parser": "^1.18.3",
+		"express": "^4.16.3"
+	}
+}
